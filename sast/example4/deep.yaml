@@ -1,0 +1,7 @@
+rules:
+  - id: india-country 
+    pattern: (India $X).country(); 
+    message: Semgrep found a match
+    languages: [java]
+    severity: WARNING
+

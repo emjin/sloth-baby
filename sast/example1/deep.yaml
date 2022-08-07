@@ -1,0 +1,14 @@
+rules:
+  - id: assignment-to-four
+    mode: taint
+    pattern-sources:
+      - patterns: 
+          - pattern: |
+             "dont_tell_anyone"
+    pattern-sinks:
+      - pattern: |
+          $X = ...;
+    message: Semgrep found a match
+    languages: [java]
+    severity: WARNING
+

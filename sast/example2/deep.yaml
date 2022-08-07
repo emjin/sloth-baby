@@ -1,0 +1,7 @@
+rules:
+  - id: assignment-to-four
+    pattern: int $X = 4; 
+    message: Semgrep found a match
+    languages: [java]
+    severity: WARNING
+

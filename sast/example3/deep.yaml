@@ -1,0 +1,7 @@
+rules:
+  - id: get-balance
+    pattern: (Bank $X).getBalance(); 
+    message: Semgrep found a match
+    languages: [java]
+    severity: WARNING
+
